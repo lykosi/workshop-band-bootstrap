@@ -6,7 +6,6 @@
     <meta charset="utf-8" /> <!-- Cette balise indique l'encodage utilisé dans votre fichier .html ici utf-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>Skip the Use</title> <!-- Ce titre s'affiche dans l'onglet du navigateur -->
 </head>
 
@@ -29,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link active" href="Index.html">Home</a>
+                        <a class="nav-link" href="Index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Members.html">Members</a>
@@ -45,23 +44,48 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupport">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link justify-content-end" href="Contact.html">Contact</a>
+                        <a class="nav-link justify-content-end active" href="Contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
     <!-- CONTENT -->
-    <!-- Carousel -->
-    <div id="idCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-        <div class="carousel-inner"><div class="carousel-item active"><img class="mx-auto d-block img-fluid" src="./medias/band.jpg" alt="" /></div>
-            <div class="carousel-item"><img class="mx-auto d-block img-fluid" src="./medias/little_armageddon.jpg" alt="" /></div>
-            <div class="carousel-item"><img class="mx-auto d-block img-fluid" src="./medias/nameless_world.jpg" alt="" /></div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form action="#" method="POST" id="from-contact">
+                    <div class="row">
+                        <div class="col">
+                            <div class="from-contact">
+                                <label for="InputFirstName">First Name</label>
+                                <input type="text" class="form-control form_contact" id="InputFirstName" placeholder="Enter first name">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="from-contact">
+                                <label for="InputLastName">Last Name</label>
+                                <input type="text" class="form-control" id="InputLastName" placeholder="Enter last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="from-contact">
+                        <label for="InputEmail">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="from-contact">
+                        <label for="ControlTextarea">Message</label>
+                        <textarea class="form-control" id="ControlTextarea" rows="3"></textarea>
+                    </div>
+                    <p></p>
+                    <div class="from-contact">
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                    </div>    
+                </form>
+            </div>
         </div>
-        <a class="carousel-control-prev" href="#idCarousel" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-        <a class="carousel-control-next" href="#idCarousel" data-slide="next"><span class="carousel-control-next-icon"></span></a>
     </div><br/>
-    <!-- Fin Carousel -->
     <!-- FOOTER -->
     <div class="jumbotron text-center" style="margin-bottom:0">
         &copy; 2021 - Skip the use
